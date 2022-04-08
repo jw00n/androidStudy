@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinActivity">
+
+    <EditText
+        android:id="@+id/edtJoinid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="아이디 입력"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <EditText
+        android:id="@+id/edtJoinNick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="닉네임 입력"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtJoinid"
+        app:layout_constraintStart_toStartOf="@+id/edtJoinid"
+        app:layout_constraintTop_toBottomOf="@+id/edtJoinid" />
+
+    <EditText
+        android:id="@+id/edtJoinPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="비밀번호 입력"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtJoinNick"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edtJoinNick"
+        app:layout_constraintTop_toBottomOf="@+id/edtJoinNick" />
+
+    <Button
+        android:id="@+id/btnJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="가입등록"
+        app:layout_constraintEnd_toEndOf="@+id/edtJoinPw"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/edtJoinPw"
+        app:layout_constraintTop_toBottomOf="@+id/edtJoinPw" />
+</androidx.constraintlayout.widget.ConstraintLayout>
